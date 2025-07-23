@@ -1,3 +1,3 @@
 # My personal website (for now)
 
-[Christopher Joy](hhtp://chrisjoy-econ.github.io)
+[Christopher Joy](http://chrisjoy-econ.github.io)
