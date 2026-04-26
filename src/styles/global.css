@@ -301,6 +301,50 @@ a:hover {
   color: var(--muted);
 }
 
+.cv-summary {
+  font-style: italic;
+  color: #444;
+  margin-bottom: 0;
+}
+
+.cv-distinction {
+  font-family: var(--font-ui);
+  font-style: normal;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-left: 0.4rem;
+  vertical-align: middle;
+}
+
+.cv-bullets {
+  margin: 0.5rem 0 0 1.1rem;
+  font-size: 0.93rem;
+  line-height: 1.65;
+}
+
+.cv-bullets li {
+  margin-bottom: 0.3rem;
+}
+
+.cv-skills-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.cv-skills-group h3 {
+  font-family: var(--font-ui);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+}
+
 /* ── Footer ── */
 
 footer {
