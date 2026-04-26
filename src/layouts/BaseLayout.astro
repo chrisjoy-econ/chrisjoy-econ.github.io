@@ -1,0 +1,42 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = 'Christopher J. Joy — Researcher & Consultant' } = Astro.props;
+const pathname = Astro.url.pathname;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  </head>
+  <body>
+    <nav>
+      <a href="/" class="site-name">christopher j. joy</a>
+      <ul class="nav-links">
+        <li><a href="/" aria-current={pathname === '/' ? 'page' : undefined}>about</a></li>
+        <li><a href="/research" aria-current={pathname === '/research' ? 'page' : undefined}>research</a></li>
+        <li><a href="/cv" aria-current={pathname === '/cv' ? 'page' : undefined}>cv</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer>
+      Made with ☕ cà phê &amp; kopi (กาแฟ) &nbsp;&middot;&nbsp; &copy; 2026 Christopher J. Joy
+    </footer>
+  </body>
+</html>
