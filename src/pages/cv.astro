@@ -1,0 +1,109 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="cv — christopher joy"
+  description="Curriculum vitae of Christopher J. Joy — researcher, consultant, Southeast Asia specialist."
+>
+  <div class="page-header">
+    <h1>Curriculum Vitae</h1>
+  </div>
+  <hr class="rule-accent" />
+
+  <a href="/cv.pdf" download class="cv-download">
+    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+    Download PDF
+  </a>
+
+  <h2>Education</h2>
+  <div class="cv-section">
+    <div class="cv-entry">
+      <div class="cv-entry-header">
+        <span class="cv-entry-title">MSc Development Economics</span>
+        <span class="cv-entry-date">2020 – 2022</span>
+      </div>
+      <p class="cv-entry-org"><a href="http://www.city.ac.uk">City, University of London</a></p>
+    </div>
+    <div class="cv-entry">
+      <div class="cv-entry-header">
+        <span class="cv-entry-title">MA Southeast Asian Studies</span>
+        <span class="cv-entry-date">2019 – 2021</span>
+      </div>
+      <p class="cv-entry-org"><a href="https://www.soas.ac.uk/">SOAS, University of London</a></p>
+    </div>
+    <div class="cv-entry">
+      <div class="cv-entry-header">
+        <span class="cv-entry-title">BSc Finance &amp; Computer Science</span>
+        <span class="cv-entry-date">2000 – 2004</span>
+      </div>
+      <p class="cv-entry-org"><a href="http://www.pitt.edu">University of Pittsburgh</a></p>
+    </div>
+  </div>
+
+  <h2>Professional Experience</h2>
+  <div class="cv-section">
+    <div class="cv-entry">
+      <div class="cv-entry-header">
+        <span class="cv-entry-title">Independent Consultant</span>
+        <span class="cv-entry-date">2015 – 2020</span>
+      </div>
+      <p class="cv-entry-org">US &amp; Southeast Asia</p>
+      <p>Strategy and operations consulting for small and mid-sized businesses across the US and Southeast Asia.</p>
+    </div>
+    <div class="cv-entry">
+      <div class="cv-entry-header">
+        <span class="cv-entry-title">Co-founder</span>
+        <span class="cv-entry-date">2010 – 2015</span>
+      </div>
+      <p class="cv-entry-org">Technology company (sold 2015)</p>
+      <p>Co-founded and built a technology company with a former colleague; led to eventual sale.</p>
+    </div>
+    <div class="cv-entry">
+      <div class="cv-entry-header">
+        <span class="cv-entry-title">Software &amp; Support Developer</span>
+        <span class="cv-entry-date">2004 – 2010</span>
+      </div>
+      <p class="cv-entry-org"><a href="https://www.novachem.com">Novachem</a> &amp; mid-sized firms</p>
+      <p>Developed and maintained software for the chemical industry. Provided technical support, trained users, and built documentation repositories.</p>
+    </div>
+  </div>
+
+  <h2>Research &amp; Writing</h2>
+  <div class="cv-section">
+    <div class="cv-entry">
+      <p><em>The Embedded State and Vietnam's COVID-19 Response</em> — Working paper</p>
+    </div>
+    <div class="cv-entry">
+      <p><em>Found Women: Economic Development and Female Empowerment in Southeast Asia</em> — Working paper</p>
+    </div>
+    <div class="cv-entry">
+      <p><em>Private Equity, The Enabling State and The Logics of Infrastructure Investment</em> — Article</p>
+    </div>
+    <div class="cv-entry">
+      <p><em>Extra-welfarism: Welfare Economics and The Expanded Childhood Tax Credit</em> — Policy brief</p>
+    </div>
+    <div class="cv-entry">
+      <p><em>Nusantara: Ibukota Baru or Ghost Town?</em> — Policy brief</p>
+    </div>
+  </div>
+
+  <h2>Skills &amp; Languages</h2>
+  <div class="cv-section">
+    <h3>Languages</h3>
+    <ul class="cv-skills">
+      <li>English (native)</li>
+      <li>Vietnamese</li>
+      <li>Indonesian</li>
+      <li>Thai</li>
+    </ul>
+
+    <h3 style="margin-top: 1.25rem;">Research Tools</h3>
+    <ul class="cv-skills">
+      <li>Stata</li>
+      <li>R</li>
+      <li>SQL</li>
+      <li>Python</li>
+    </ul>
+  </div>
+</BaseLayout>
