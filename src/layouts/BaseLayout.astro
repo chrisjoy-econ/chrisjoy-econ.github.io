@@ -7,7 +7,7 @@ interface Props {
 }
 
 const { title, description = 'Christopher J. Joy — Researcher & Consultant' } = Astro.props;
-const pathname = Astro.url.pathname;
+const pathname = Astro.url.pathname.replace(/\/$/, '') || '/';
 ---
 
 <!doctype html>
