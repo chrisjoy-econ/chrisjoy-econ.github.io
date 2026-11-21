@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-Personal academic site for **Christopher J. Joy**, an economic researcher and consultant at Allegheny Economic Research (Pittsburgh). Live at https://chrisjoy-econ.github.io.
+Personal academic site for **Christopher J. Joy**, an economic researcher and consultant at Allegheny Economic Research (Pittsburgh). Live at <https://chrisjoy-econ.github.io>.
 
 ## Stack
 
@@ -18,7 +18,7 @@ npm run preview   # serve the built dist/
 
 ## Structure
 
-```
+```text
 src/
   layouts/BaseLayout.astro   # <head>, nav, footer; every page wraps in this
   pages/index.astro          # /         About: bio, Working Life, Education, Currently
@@ -51,7 +51,7 @@ Root-level `favicon-*.png` and `assets/` are leftovers from the old Bootstrap si
 - **Don't invent content:** publications, dates, degrees, employers or claims. Christopher supplies the copy, and placeholders should be flagged, not filled in.
 - Keep his voice: first person, plain and understated, no marketing language.
 - Vietnamese place names keep their diacritics (Hà Nội, Việt Nam / Viet Nam).
-- The **CV download** button in `cv.astro` points to a OneDrive share link, not `public/cv.pdf`. When the CV changes, the user updates that link; ask which one to use if unclear.
+- The **CV download** button in `cv.astro` points to a Proton Drive share link (switched from OneDrive Nov 2026), not `public/cv.pdf`. Keep the full URL including the `#…` fragment: it is the decryption key. When the CV changes, the user updates that link; ask which one to use if unclear.
 - The footer year is hard-coded in `BaseLayout.astro`. Update it when the year changes.
 - Don't edit `research.astro` content unless explicitly asked.
 
@@ -61,3 +61,4 @@ Root-level `favicon-*.png` and `assets/` are leftovers from the old Bootstrap si
 - Run `npm run build` and check that it succeeds before committing.
 - Never commit `dist/`, `.astro/` or `node_modules/` (already in `.gitignore`).
 - Commit messages: short imperative summary (e.g. "Update CV PDF download link").
+- **Every time a PR is opened/updated or merged, end the reply with the live site URL: <https://chrisjoy-econ.github.io>** (after a merge, note that the Pages deploy takes a minute or two; before a merge, note changes aren't live yet).
